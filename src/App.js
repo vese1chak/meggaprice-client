@@ -1,8 +1,13 @@
+// импорт компонента для навигации между страницами
+import {BrowserRouter} from "react-router-dom";
+// импорт компонента для роутинга
+import AppRouter from "./components/AppRouter";
+
 function App() {
   return (
-    <div>
-      It works!
-    </div>
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
   )
 }
 
