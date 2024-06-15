@@ -1,0 +1,90 @@
+@media screen and (max-width: 1170px){
+  .header {
+    min-width: 1170px;
+    max-width: 1170px;
+    max-block-size: 1170px;
+  }
+  .footer {
+    width: 1170px;
+  }
+  .header {
+    width: 1170px;
+  }
+  .container {
+    width: 1170px;
+  }
+}
+@media screen and (max-width: 768px){
+  .parameters{
+    display: none;
+  }
+  .profile {
+    margin-left: 250px;
+  }
+  .catalog {
+    display:none;
+  }
+  .goods {
+    margin-left: 125px;
+  }
+}
+@media screen and (max-width: 425px){
+  .goods {
+    margin-left: 250px;
+    .top-sales {
+      &__title {
+        font-size: 40px;
+        font-weight: 500;
+      }
+    }
+  }
+  .card {
+    &__container {
+      grid-template-columns: repeat(3, 200px);
+    }
+  }
+  .good {
+    &__title {
+      font-size: 36px;
+      font-weight: 500;
+    }
+    &__stars {
+      font-size: 34px;
+      font-weight: 500;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &__reviews {
+      font-size: 34px;
+      font-weight: 500;
+    }
+    &__params {
+      &__title {
+        font-size: 32px;
+        font-weight: 500;
+      }
+      &__property {
+        font-size: 26px;
+        font-weight: 500;
+      }
+    }
+    &__to-cart {
+      &__price {
+        &__new {
+          font-size: 40px;
+          font-weight: 500;
+        }
+        &__old {
+          font-size: 24px;
+          font-weight: 400;
+        }
+      }
+      button {
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+  }
+}

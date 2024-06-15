@@ -2,8 +2,8 @@ import React from 'react';
 
 const Questions = () => {
     return (
-        <div>
-            QUESTIONS
+        <div className='container min-height-750'>
+            QUEST
         </div>
     );
 };

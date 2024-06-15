@@ -1,0 +1,18 @@
+.sales {
+    margin: 15px 0;
+}
+.shop {
+    position: relative;
+    margin-bottom: 50px;
+}
+.goods {
+    margin-left: 250px;
+    .top-sales {
+        &__title {
+            color: #000;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

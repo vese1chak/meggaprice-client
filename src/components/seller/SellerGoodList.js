@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Basket = () => {
+const SellerGoodList = observer(() => {
     return (
         <div>
-            BASKET
+
         </div>
     );
-};
+});
 
-export default Basket;
+export default SellerGoodList;

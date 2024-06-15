@@ -1,23 +1,26 @@
 // импорт путей
 import {
+    ABOUT_ROUTE,
     ADMIN_ROUTE,
-    BASKET_ROUTE,
+    CART_ROUTE,
     FAVORITE_ROUTE, GOOD_ROUTE,
     LOGIN_ROUTE,
     ORDERS_ROUTE,
-    PROFILE_ROUTE,
-    QUESTIONS_ROUTE, REGISTRATION_ROUTE, SELLER_ROUTE, SHOP_ROUTE
+    PROFILE_ROUTE, QUESTIONS_ROUTE,
+    REGISTRATION_ROUTE, SELLER_ROUTE, SHOP_ROUTE, SUPPORT_ROUTE
 } from "./utils/consts";
 import Admin from "./pages/Admin";
-import Basket from "./pages/Basket";
 import Favorite from "./pages/Favorite";
 import Orders from "./pages/Orders";
 import Profile from "./pages/Profile";
-import Questions from "./pages/Questions";
+import Support from "./pages/Support";
 import Auth from "./pages/Auth";
 import Shop from "./pages/Shop";
 import Seller from "./pages/Seller";
 import GoodPage from "./pages/GoodPage";
+import Cart from "./pages/Cart";
+import About from "./pages/About";
+import Questions from "./pages/Questions";
 
 // массив страниц, к которым имеет доступ только авторизованный пользователь
 export const authRoutes = [
@@ -26,8 +29,8 @@ export const authRoutes = [
         Component: Admin
     },
     {
-        path: BASKET_ROUTE,
-        Component: Basket
+        path: CART_ROUTE,
+        Component: Cart
     },
     {
         path: FAVORITE_ROUTE,
@@ -38,8 +41,8 @@ export const authRoutes = [
         Component: Orders
     },
     {
-        path: QUESTIONS_ROUTE,
-        Component: Questions
+        path: SUPPORT_ROUTE,
+        Component: Support
     }
 ]
 
@@ -58,15 +61,23 @@ export const publicRoutes = [
         Component: Shop
     },
     {
-        path: PROFILE_ROUTE,
+        path: PROFILE_ROUTE + '/:id',
         Component: Profile
     },
     {
-        path: SELLER_ROUTE,
+        path: SELLER_ROUTE + '/:id',
         Component: Seller
     },
     {
         path: GOOD_ROUTE + '/:id', // указываем для просмотра товара по адресу .../good/1 и т.д.
         Component: GoodPage
+    },
+    {
+        path: ABOUT_ROUTE,
+        Component: About
+    },
+    {
+        path: QUESTIONS_ROUTE,
+        Component: Questions
     }
 ]

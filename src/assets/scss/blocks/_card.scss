@@ -1,0 +1,126 @@
+.card {
+    position: relative;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.20);
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 200px);
+        grid-auto-rows: 320px;
+        column-gap: 32px;
+        row-gap: 27px;
+    }
+    &__to-favorite {
+        position: absolute;
+        right: 5px;
+        top: 0;
+        width: 25px;
+        height: 25px;
+    }
+    &__img {
+        height: 220px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            max-width: 95%;
+            max-height: 80%;
+        }
+    }
+    &__info {
+        padding: 0 5px;
+    }
+    &__stats {
+        display: flex;
+        align-items: center;
+        height: 13px;
+    }
+    &__rating {
+        margin-right: 5px;
+        display: flex;
+        align-items: center;
+        img {
+            display: block;
+            margin-right: 3px;
+            width: 10px;
+            height: 10px;
+        }
+        span {
+            font-size: 12px;
+            font-weight: 400;
+            color: #000;
+        }
+        .icon-star {
+            color: #FFC107;
+            margin-right: 2px;
+        }
+    }
+    &__reviews {
+        display: flex;
+        align-items: center;
+        img {
+            display: block;
+            width: 10px;
+            height: 10px;
+        }
+        span {
+            font-size: 12px;
+            font-weight: 400;
+            color: #000;
+        }
+        .icon-message-circle {
+            margin-right: 2px;
+        }
+    }
+    &__title {
+        height: 37px;
+        color: #000;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: normal;
+    }
+    &__order {
+        padding: 5px 0;
+        height: 40px;
+        display: flex;
+        button {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            background: #4EA16B;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    }
+    &__price {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        &-old {
+            text-align: right;
+            font-size: 13px;
+            line-height: 10px;
+            font-weight: 400;
+            color: #000;
+            text-decoration: line-through;
+        }
+        &-new {
+            font-size: 19px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #000;
+        }
+    }
+    &__promo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        padding: 2px 5px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
